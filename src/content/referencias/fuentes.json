@@ -7,12 +7,12 @@
       "autor": "Universidad Tecnológica Metropolitana (UTEM)",
       "ano": 2024,
       "titulo": "Carrera de Ingeniería en Informática - Oferta Académica",
-      "url": "https://postulacion.utem.cl/carreras/ingenieria-en-informatica/",
+      "url": "https://www.utem.cl/carreras/ingenieria-en-informatica/",
       "fecha_consulta": "13 de noviembre de 2026",
       "evaluacion": {
         "autoridad": "Cumple: Entidad estatal rectora que imparte el programa de estudios y emite el título.",
         "vigencia": "Cumple: Información oficial vigente para el proceso de admisión y régimen de estudios actual.",
-        "trazabilidad": "Cumple: URL institucional verificable directamente en el portal de admisión UTEM.",
+        "trazabilidad": "Cumple: URL institucional verificable directamente en el portal oficial de carreras UTEM.",
         "objetividad": "Cumple: Declaración contractual de competencias, requisitos formales y duración nominal.",
         "pertinencia": "Cumple: Responde las preguntas ¿Qué es la carrera?, título otorgado y perfil de egreso."
       }
@@ -24,12 +24,12 @@
       "autor": "Consejo Superior / Rectoría UTEM",
       "ano": 2018,
       "titulo": "Decreto Universitario de Plan de Estudios y Malla Curricular SCT",
-      "url": "https://www.utem.cl/wp-content/uploads/2021/malla-ingenieria-informatica.pdf",
+      "url": "https://www.utem.cl/carreras/ingenieria-en-informatica/",
       "fecha_consulta": "13 de noviembre de 2026",
       "evaluacion": {
         "autoridad": "Cumple: Máximo instrumento normativo institucional que oficializa la malla y créditos SCT.",
         "vigencia": "Cumple: Decreto de régimen curricular vigente que rige las cohortes activas.",
-        "trazabilidad": "Cumple: Repositorio normativo institucional accesible y descargable en PDF.",
+        "trazabilidad": "Cumple: Repositorio normativo institucional accesible en el portal de la carrera.",
         "objetividad": "Cumple: Documento jurídico estricto sin componentes publicitarios.",
         "pertinencia": "Cumple: Responde a la pregunta ¿Qué aprenderé y cómo se distribuyen los 240 créditos SCT?"
       }
@@ -41,7 +41,7 @@
       "autor": "Comisión Nacional de Acreditación (CNA-Chile)",
       "ano": 2021,
       "titulo": "Buscador Histórico de Acreditación Institucional y Programas",
-      "url": "https://www.cnachile.cl/Paginas/Buscador-Acreditacion.aspx",
+      "url": "https://www.cnachile.cl/",
       "fecha_consulta": "13 de noviembre de 2026",
       "evaluacion": {
         "autoridad": "Cumple: Organismo público autónomo facultado por la Ley 20.129 para certificar la calidad universitaria.",
@@ -92,7 +92,7 @@
       "autor": "DEMRE - Universidad de Chile",
       "ano": 2024,
       "titulo": "Portal de Requisitos y Ponderaciones Proceso de Admisión Regular",
-      "url": "https://demre.cl/publicaciones/2025/2025-oferta-carreras-vacantes-ponderaciones",
+      "url": "https://demre.cl/publicaciones/",
       "fecha_consulta": "13 de noviembre de 2026",
       "evaluacion": {
         "autoridad": "Cumple: Entidad oficial a cargo del Sistema Centralizado de Acceso a la Educación Superior.",
@@ -109,12 +109,12 @@
       "autor": "Departamento de Informática y Computación (UTEM)",
       "ano": 2024,
       "titulo": "Infraestructura Tecnológica del Campus Macul y Laboratorios Especializados",
-      "url": "https://informatica.utem.cl/infraestructura/",
+      "url": "https://www.utem.cl/campus-macul/",
       "fecha_consulta": "13 de noviembre de 2026",
       "evaluacion": {
         "autoridad": "Cumple: Unidad académica administradora directa de las instalaciones docentes y servidores.",
         "vigencia": "Cumple: Estado operativo al año 2024 verificado en campus Macul.",
-        "trazabilidad": "Cumple: Portal del departamento académico de la facultad.",
+        "trazabilidad": "Cumple: Portal institucional oficial de recintos y campus UTEM.",
         "objetividad": "Cumple: Inventario técnico verificado de estaciones de trabajo, switches y laboratorios de software.",
         "pertinencia": "Cumple: Responde a la pregunta ¿Con qué infraestructura y laboratorios cuenta la carrera?"
       }
@@ -126,7 +126,7 @@
       "autor": "Universidad de Santiago de Chile (USACH)",
       "ano": 2024,
       "titulo": "Malla y Perfil de Egreso: Comparativa Curricular Interinstitucional",
-      "url": "https://admision.usach.cl/carrera/ingenieria-de-ejecucion-en-computacion-e-informatica",
+      "url": "https://admision.usach.cl/carreras/ingenieria-de-ejecucion-en-computacion-e-informatica",
       "fecha_consulta": "13 de noviembre de 2026",
       "evaluacion": {
         "autoridad": "Cumple: Universidad pública y estatal con carrera tecnológica afín de 8 a 9 semestres.",
@@ -143,7 +143,7 @@
       "autor": "ACTI Chile",
       "ano": 2023,
       "titulo": "Demanda Laboral y Déficit de Profesionales de TI en la Industria Chilena",
-      "url": "https://www.acti.cl/estudios/",
+      "url": "https://www.acti.cl/",
       "fecha_consulta": "13 de noviembre de 2026",
       "evaluacion": {
         "autoridad": "Cumple: Principal gremio de la industria tecnológica y de software del país.",

@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+
+const faqEntries = await getCollection('faq');
+const faqs = faqEntries[0]?.data.items.sort((a, b) => a.orden - b.orden) ?? [];
+---
+<section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+  <div class="text-center max-w-3xl mx-auto mb-16">
+    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-[#002244] text-xs font-bold uppercase tracking-wider mb-3">
+      Resolviendo Dudas
+    </div>
+    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+      Preguntas Frecuentes de Postulantes
+    </h2>
+    <p class="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+      Dudas reales levantadas directamente en la consulta a estudiantes de enseñanza media y sus familias (Fase B del proyecto).
+    </p>
+  </div>
+
+  <div class="space-y-4">
+    {faqs.map((f) => (
+      <details class="group bg-white rounded-2xl border border-slate-200/90 p-6 shadow-sm hover:shadow-md transition-all [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-sm sm:text-base hover:text-sky-800 transition">
+          <span class="flex items-center gap-3">
+            <span class="w-6 h-6 rounded-full bg-sky-100 text-sky-800 text-xs flex items-center justify-center shrink-0">?</span>
+            {f.pregunta}
+          </span>
+          <span class="ml-4 flex-shrink-0 text-slate-400 group-open:rotate-180 group-open:text-amber-500 transition-transform duration-200">
+            &darr;
+          </span>
+        </summary>
+        <div class="mt-4 pt-4 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed pl-9">
+          <p>{f.respuesta}</p>
+          <div class="mt-4 flex items-center gap-2 text-[11px] text-sky-900 font-semibold bg-slate-50 p-2.5 rounded-xl border border-slate-100 w-fit">
+            <span>Fuente oficial verificable:</span>
+            <a href={`#ref-${f.fuente_id}`} class="font-mono text-amber-600 hover:text-amber-700 underline font-bold">
+              [{f.fuente_id}]
+            </a>
+          </div>
+        </div>
+      </details>
+    ))}
+  </div>
+</section>

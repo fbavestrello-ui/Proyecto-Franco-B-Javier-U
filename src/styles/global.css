@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --utem-blue-escudo: #004b93;
+    --utem-green-escudo: #78be20;
+    --utem-dark-text: #1b365d;
+    --utem-accent-blue: #0077c8;
+    --utem-red: #e02424;
+    --utem-surface: #f8fafc;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+  }
+}
+
+/* Patrón sutil para dar textura sin sobrecargar */
+.bg-grid-light {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 75, 147, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 75, 147, 0.03) 1px, transparent 1px);
+}
+
+/* Hero con el degradado azul-turquesa fotográfico característico de utem.cl */
+.utem-hero-gradient {
+  background: linear-gradient(135deg, rgba(0, 60, 120, 0.95) 0%, rgba(0, 105, 160, 0.9) 45%, rgba(0, 140, 160, 0.85) 100%);
+  position: relative;
+}
+
+.utem-hero-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(120, 190, 32, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(0, 180, 220, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Cabeceras de tarjetas con el degradado Azul-Verde oficial de la imagen subida */
+.utem-banner-gradient-1 {
+  background: linear-gradient(110deg, #004b93 0%, #0077c8 40%, #78be20 100%);
+}
+
+.utem-banner-gradient-2 {
+  background: linear-gradient(110deg, #005691 0%, #008ca0 50%, #5ba61a 100%);
+}
+
+.utem-banner-gradient-3 {
+  background: linear-gradient(110deg, #003870 0%, #006da8 45%, #78be20 100%);
+}
+
+.utem-banner-gradient-4 {
+  background: linear-gradient(110deg, #00609c 0%, #0099b8 55%, #6eb422 100%);
+}
+
+/* Tarjetas con cabecera degradada y contenedor de ícono redondeado idéntico a utem.cl */
+.utem-featured-card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(0, 43, 91, 0.06);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.utem-featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -4px rgba(0, 75, 147, 0.14);
+  border-color: #93c5fd;
+}
+
+/* Ícono blanco cuadrado redondeado con sombra idéntico al banner de la UTEM */
+.utem-icon-badge {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #004b93;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+/* Botones redondeados oficiales UTEM */
+.utem-btn-white {
+  background-color: #ffffff;
+  color: #004b93;
+  font-weight: 700;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.utem-btn-white:hover {
+  background-color: #f8fafc;
+  color: #003366;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}

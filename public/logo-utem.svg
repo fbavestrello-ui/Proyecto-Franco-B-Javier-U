@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 100" class="h-10 sm:h-12 w-auto" role="img" aria-label="Logo Oficial Universidad Tecnológica Metropolitana">
+  <title>Universidad Tecnológica Metropolitana</title>
+  <!-- Símbolo Isotipo UTEM: Dos formas geométricas superpuestas con el arco característico -->
+  <g transform="translate(10, 10)">
+    <!-- Base azul marino profunda -->
+    <rect x="0" y="0" width="75" height="75" rx="14" fill="#002244" stroke="#F5A623" stroke-width="2.5" />
+    <!-- Líneas de tecnología / convergencia en cian y dorado -->
+    <path d="M15 60 L15 32 C15 22 25 15 38 15 C51 15 60 22 60 32 L60 60" fill="none" stroke="#F5A623" stroke-width="6" stroke-linecap="round" />
+    <path d="M26 60 L26 36 C26 29 31 24 38 24 C45 24 49 29 49 36 L49 60" fill="none" stroke="#00A3E0" stroke-width="4.5" stroke-linecap="round" />
+    <!-- Núcleo tecnológico central -->
+    <circle cx="38" cy="48" r="5" fill="#F5A623" />
+  </g>
+  
+  <!-- Texto Logotipo UTEM -->
+  <text x="102" y="44" font-family="'Inter', 'Montserrat', 'Helvetica Neue', sans-serif" font-weight="900" font-size="34" fill="#FFFFFF" letter-spacing="3.5">UTEM</text>
+  <text x="103" y="61" font-family="'Inter', 'Montserrat', 'Segoe UI', sans-serif" font-weight="600" font-size="9" fill="#F5A623" letter-spacing="2.2">UNIVERSIDAD TECNOLÓGICA</text>
+  <text x="103" y="73" font-family="'Inter', 'Montserrat', 'Segoe UI', sans-serif" font-weight="600" font-size="9" fill="#38BDF8" letter-spacing="2.2">METROPOLITANA</text>
+  <text x="103" y="85" font-family="'Inter', 'Montserrat', 'Segoe UI', sans-serif" font-weight="500" font-size="7.5" fill="#94A3B8" letter-spacing="1.2">DEL ESTADO DE CHILE · 1993</text>
+</svg>

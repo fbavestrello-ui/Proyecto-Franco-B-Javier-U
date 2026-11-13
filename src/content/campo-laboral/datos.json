@@ -1,0 +1,14 @@
+{
+  "empleabilidad_1er_ano": "84.2%",
+  "empleabilidad_2do_ano": "89.7%",
+  "ingreso_promedio_4to_ano": "$1.700.000 a $2.100.000",
+  "ano_dato": 2024,
+  "areas_desempeno": [
+    "Desarrollo de Software y Arquitectura Web / Cloud",
+    "Administración y Seguridad de Bases de Datos",
+    "Gestión Ágil de Proyectos Informáticos (Scrum / DevOps)",
+    "Análisis de Datos e Inteligencia de Negocios (BI)",
+    "Integración de Sistemas y Redes de Computadores"
+  ],
+  "fuente_id": "F04"
+}

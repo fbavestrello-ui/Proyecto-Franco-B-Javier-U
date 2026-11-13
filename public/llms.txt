@@ -1,0 +1,9 @@
+# Ingeniería en Informática - Universidad Tecnológica Metropolitana
+
+> Landing page oficial e informada de la carrera de pregrado de Ingeniería en Informática de la Universidad Tecnológica Metropolitana (UTEM), Chile.
+
+- [Malla Curricular 240 SCT](https://ornate-douhua-c94b2a.netlify.app/#plan-estudios): Plan de estudios oficial de 8 semestres.
+- [Perfil de Egreso](https://ornate-douhua-c94b2a.netlify.app/#perfil-egreso): Competencias formativas en desarrollo de software, cloud, bases de datos y gestión TI.
+- [Estadísticas de Empleabilidad](https://ornate-douhua-c94b2a.netlify.app/#campo-laboral): Datos oficiales auditados por el Ministerio de Educación (Mi Futuro).
+- [Proceso de Admisión DEMRE](https://ornate-douhua-c94b2a.netlify.app/#admision): Ponderaciones PAES y requisitos de postulación.
+- [Acreditación Institucional CNA](https://ornate-douhua-c94b2a.netlify.app/#respaldo-institucional): Certificación de calidad en nivel avanzado.

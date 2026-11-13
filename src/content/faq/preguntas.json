@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id_pregunta": "P01",
+      "orden": 1,
+      "pregunta": "¿Cuál es la diferencia entre Ingeniería en Informática (8 semestres) e Ingeniería Civil en Informática (10-11 semestres)?",
+      "respuesta": "Ingeniería en Informática (8 semestres) tiene un perfil orientado a la aplicación tecnológica directa: desarrollo de software, gestión de sistemas, ciberseguridad y bases de datos desde los primeros años. Ingeniería Civil añade más semestres de ciencias básicas avanzadas (física y cálculo teórico), formulación macroeconómica e investigación teórica. En la práctica laboral inmediata, ambas comparten altos niveles de empleabilidad en desarrollo e ingeniería de software.",
+      "fuente_id": "F01"
+    },
+    {
+      "id_pregunta": "P02",
+      "orden": 2,
+      "pregunta": "¿Necesito saber programar antes de ingresar a primer año?",
+      "respuesta": "No. El plan de estudios está diseñado desde cero en la asignatura de Introducción a la Programación (Semestre 1). Se enseña lógica computacional, algoritmia y buenas prácticas estructuradas sin asumir experiencia previa.",
+      "fuente_id": "F02"
+    },
+    {
+      "id_pregunta": "P03",
+      "orden": 3,
+      "pregunta": "¿Qué título y grado académico entrega la carrera?",
+      "respuesta": "Otorga el Título Profesional de Ingeniero/a en Informática y el Grado Académico de Licenciado/a en Ciencias de la Informática, avalado por la Universidad Tecnológica Metropolitana mediante decreto universitario.",
+      "fuente_id": "F01"
+    },
+    {
+      "id_pregunta": "P04",
+      "orden": 4,
+      "pregunta": "¿La UTEM y la carrera cuentan con Gratuidad y Acreditación?",
+      "respuesta": "Sí. La UTEM es una universidad estatal acreditada por la Comisión Nacional de Acreditación (CNA-Chile) por 4 años en nivel avanzado, lo que permite a sus estudiantes acceder a Gratuidad y todos los beneficios estatales del Mineduc.",
+      "fuente_id": "F03"
+    },
+    {
+      "id_pregunta": "P05",
+      "orden": 5,
+      "pregunta": "¿En qué campus de la UTEM se imparte la carrera y con qué infraestructura?",
+      "respuesta": "Se imparte en jornada diurna en el Campus Macul (José Pedro Alessandri 1242, Ñuñoa). Cuenta con laboratorios de computación equipados con entornos Linux/Windows, laboratorios de redes y salas de trabajo colaborativo para proyectos de software.",
+      "fuente_id": "F07"
+    },
+    {
+      "id_pregunta": "P06",
+      "orden": 6,
+      "pregunta": "¿Cuáles son los requisitos de admisión y ponderaciones para postular?",
+      "respuesta": "Vía Admisión Centralizada DEMRE: NEM 20%, Ranking de Notas 20%, Prueba de Competencia Lectora 10%, Prueba de Competencia Matemática 1 (M1) 40%, y Prueba Electiva de Ciencias o Historia 10%.",
+      "fuente_id": "F06"
+    }
+  ]
+}

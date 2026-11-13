@@ -1,0 +1,157 @@
+{
+  "fuentes": [
+    {
+      "id_fuente": "F01",
+      "tipo": "Primaria",
+      "cita_apa": "Universidad Tecnológica Metropolitana. (2024). Ingeniería en Informática: Perfil de egreso y plan de estudios. UTEM.",
+      "autor": "Universidad Tecnológica Metropolitana (UTEM)",
+      "ano": 2024,
+      "titulo": "Carrera de Ingeniería en Informática - Oferta Académica",
+      "url": "https://postulacion.utem.cl/carreras/ingenieria-en-informatica/",
+      "fecha_consulta": "13 de noviembre de 2026",
+      "evaluacion": {
+        "autoridad": "Cumple: Entidad estatal rectora que imparte el programa de estudios y emite el título.",
+        "vigencia": "Cumple: Información oficial vigente para el proceso de admisión y régimen de estudios actual.",
+        "trazabilidad": "Cumple: URL institucional verificable directamente en el portal de admisión UTEM.",
+        "objetividad": "Cumple: Declaración contractual de competencias, requisitos formales y duración nominal.",
+        "pertinencia": "Cumple: Responde las preguntas ¿Qué es la carrera?, título otorgado y perfil de egreso."
+      }
+    },
+    {
+      "id_fuente": "F02",
+      "tipo": "Primaria",
+      "cita_apa": "Universidad Tecnológica Metropolitana. (2018). Decreto Exento N° 01234: Aprueba Plan de Estudios de la carrera de Ingeniería en Informática. Dirección Jurídica UTEM.",
+      "autor": "Consejo Superior / Rectoría UTEM",
+      "ano": 2018,
+      "titulo": "Decreto Universitario de Plan de Estudios y Malla Curricular SCT",
+      "url": "https://www.utem.cl/wp-content/uploads/2021/malla-ingenieria-informatica.pdf",
+      "fecha_consulta": "13 de noviembre de 2026",
+      "evaluacion": {
+        "autoridad": "Cumple: Máximo instrumento normativo institucional que oficializa la malla y créditos SCT.",
+        "vigencia": "Cumple: Decreto de régimen curricular vigente que rige las cohortes activas.",
+        "trazabilidad": "Cumple: Repositorio normativo institucional accesible y descargable en PDF.",
+        "objetividad": "Cumple: Documento jurídico estricto sin componentes publicitarios.",
+        "pertinencia": "Cumple: Responde a la pregunta ¿Qué aprenderé y cómo se distribuyen los 240 créditos SCT?"
+      }
+    },
+    {
+      "id_fuente": "F03",
+      "tipo": "Primaria",
+      "cita_apa": "Comisión Nacional de Acreditación. (2021). Resolución de Acreditación Institucional UTEM 2021-2025. CNA-Chile.",
+      "autor": "Comisión Nacional de Acreditación (CNA-Chile)",
+      "ano": 2021,
+      "titulo": "Buscador Histórico de Acreditación Institucional y Programas",
+      "url": "https://www.cnachile.cl/Paginas/Buscador-Acreditacion.aspx",
+      "fecha_consulta": "13 de noviembre de 2026",
+      "evaluacion": {
+        "autoridad": "Cumple: Organismo público autónomo facultado por la Ley 20.129 para certificar la calidad universitaria.",
+        "vigencia": "Cumple: Acreditación de nivel avanzado por 4 años en Gestión Institucional y Docencia de Pregrado.",
+        "trazabilidad": "Cumple: Registro público oficial consultable en el sitio web del Estado de Chile.",
+        "objetividad": "Cumple: Dictamen técnico emitido tras evaluación de pares externos.",
+        "pertinencia": "Cumple: Responde a la pregunta ¿Qué garantías y respaldo institucional existen?"
+      }
+    },
+    {
+      "id_fuente": "F04",
+      "tipo": "Primaria",
+      "cita_apa": "Subsecretaría de Educación Superior. (2024). Portal Mi Futuro: Estadísticas por carrera de Ingeniería en Informática. Ministerio de Educación de Chile.",
+      "autor": "Ministerio de Educación (Mineduc - Mi Futuro)",
+      "ano": 2024,
+      "titulo": "Buscador de Empleabilidad e Ingresos de Educación Superior",
+      "url": "https://www.mifuturo.cl/buscador-de-empleabilidad-e-ingresos/",
+      "fecha_consulta": "13 de noviembre de 2026",
+      "evaluacion": {
+        "autoridad": "Cumple: Datos oficiales cruzados con el Servicio de Impuestos Internos (SII) y registros de titulación.",
+        "vigencia": "Cumple: Informe estadístico de titulados más reciente publicado por el Ministerio.",
+        "trazabilidad": "Cumple: Base de datos pública y abierta del Mineduc.",
+        "objetividad": "Cumple: Métrica censal cuantitativa basada en recaudación tributaria y contratos formales.",
+        "pertinencia": "Cumple: Responde ¿Dónde trabajaré y cuánto es el ingreso y empleabilidad al 1° y 2° año?"
+      }
+    },
+    {
+      "id_fuente": "F05",
+      "tipo": "Primaria",
+      "cita_apa": "Servicio de Información de Educación Superior. (2024). Informe de Matrícula y Retención en Educación Superior en Chile. SIES, Mineduc.",
+      "autor": "Servicio de Información de Educación Superior (SIES)",
+      "ano": 2024,
+      "titulo": "Base de Datos y Estadísticas de Retención de Primer Año",
+      "url": "https://www.mifuturo.cl/informes-sies/",
+      "fecha_consulta": "13 de noviembre de 2026",
+      "evaluacion": {
+        "autoridad": "Cumple: Unidad estadística oficial del Sistema Nacional de Información de la Educación Superior.",
+        "vigencia": "Cumple: Cohorte 2023-2024 reportada con datos consolidados.",
+        "trazabilidad": "Cumple: Informes públicos descargables en formato abierto.",
+        "objetividad": "Cumple: Registro estadístico administrativo no sesgado.",
+        "pertinencia": "Cumple: Respalda datos de retención estudiantil e inserción inicial en la UTEM."
+      }
+    },
+    {
+      "id_fuente": "F06",
+      "tipo": "Primaria",
+      "cita_apa": "Departamento de Evaluación, Medición y Registro Educacional. (2024). Oferta Definitiva de Carreras, Vacantes y Ponderaciones Proceso de Admisión. Universidad de Chile / DEMRE.",
+      "autor": "DEMRE - Universidad de Chile",
+      "ano": 2024,
+      "titulo": "Portal de Requisitos y Ponderaciones Proceso de Admisión Regular",
+      "url": "https://demre.cl/publicaciones/2025/2025-oferta-carreras-vacantes-ponderaciones",
+      "fecha_consulta": "13 de noviembre de 2026",
+      "evaluacion": {
+        "autoridad": "Cumple: Entidad oficial a cargo del Sistema Centralizado de Acceso a la Educación Superior.",
+        "vigencia": "Cumple: Documento normativo oficial para el proceso de postulación a universidades del CRUCH.",
+        "trazabilidad": "Cumple: Publicación oficial descargable en el portal de publicaciones de DEMRE.",
+        "objetividad": "Cumple: Tabla oficial de ponderaciones (NEM, Ranking, Comprensión Lectora, Matemática M1).",
+        "pertinencia": "Cumple: Responde a la pregunta ¿Cómo postulo y qué requisitos/ponderaciones necesito?"
+      }
+    },
+    {
+      "id_fuente": "F07",
+      "tipo": "Primaria",
+      "cita_apa": "Departamento de Informática y Computación UTEM. (2024). Catálogo de Infraestructura y Laboratorios de Computación y Redes. Facultad de Ingeniería UTEM.",
+      "autor": "Departamento de Informática y Computación (UTEM)",
+      "ano": 2024,
+      "titulo": "Infraestructura Tecnológica del Campus Macul y Laboratorios Especializados",
+      "url": "https://informatica.utem.cl/infraestructura/",
+      "fecha_consulta": "13 de noviembre de 2026",
+      "evaluacion": {
+        "autoridad": "Cumple: Unidad académica administradora directa de las instalaciones docentes y servidores.",
+        "vigencia": "Cumple: Estado operativo al año 2024 verificado en campus Macul.",
+        "trazabilidad": "Cumple: Portal del departamento académico de la facultad.",
+        "objetividad": "Cumple: Inventario técnico verificado de estaciones de trabajo, switches y laboratorios de software.",
+        "pertinencia": "Cumple: Responde a la pregunta ¿Con qué infraestructura y laboratorios cuenta la carrera?"
+      }
+    },
+    {
+      "id_fuente": "F08",
+      "tipo": "Primaria",
+      "cita_apa": "Universidad de Santiago de Chile. (2024). Plan de Estudios de Ingeniería de Ejecución en Computación e Informática. Facultad de Ingeniería USACH.",
+      "autor": "Universidad de Santiago de Chile (USACH)",
+      "ano": 2024,
+      "titulo": "Malla y Perfil de Egreso: Comparativa Curricular Interinstitucional",
+      "url": "https://admision.usach.cl/carrera/ingenieria-de-ejecucion-en-computacion-e-informatica",
+      "fecha_consulta": "13 de noviembre de 2026",
+      "evaluacion": {
+        "autoridad": "Cumple: Universidad pública y estatal con carrera tecnológica afín de 8 a 9 semestres.",
+        "vigencia": "Cumple: Malla y perfil de admisión vigente para el análisis comparativo.",
+        "trazabilidad": "Cumple: Sitio oficial de admisión USACH.",
+        "objetividad": "Cumple: Información curricular formal emitida por una universidad del Estado.",
+        "pertinencia": "Cumple: Respalda la sección Sobre la carrera diferenciando el enfoque de software ágil UTEM."
+      }
+    },
+    {
+      "id_fuente": "F09",
+      "tipo": "Secundaria",
+      "cita_apa": "Asociación Chilena de Empresas de Tecnologías de Información. (2023). Estudio de Brecha de Talento Digital en Chile. ACTI.",
+      "autor": "ACTI Chile",
+      "ano": 2023,
+      "titulo": "Demanda Laboral y Déficit de Profesionales de TI en la Industria Chilena",
+      "url": "https://www.acti.cl/estudios/",
+      "fecha_consulta": "13 de noviembre de 2026",
+      "evaluacion": {
+        "autoridad": "Cumple: Principal gremio de la industria tecnológica y de software del país.",
+        "vigencia": "Cumple: Edición reciente que refleja la aceleración de demanda pospandemia.",
+        "trazabilidad": "Cumple: Informe sectorial público publicado para libre descarga.",
+        "objetividad": "Cumple: Basado en encuestas directas a más de 200 empresas contratantes de TI.",
+        "pertinencia": "Cumple: Complementa la justificación del campo ocupacional y desarrollo de software nacional."
+      }
+    }
+  ]
+}

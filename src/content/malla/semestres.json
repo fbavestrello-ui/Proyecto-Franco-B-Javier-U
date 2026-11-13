@@ -1,0 +1,81 @@
+{
+  "semestres": [
+    {
+      "semestre": 1,
+      "asignaturas": [
+        { "codigo": "INF-101", "nombre": "Introducción a la Programación", "sct": 6, "area": "Especialidad", "prerrequisitos": [] },
+        { "codigo": "MAT-101", "nombre": "Cálculo Diferencial", "sct": 6, "area": "Ciencias Básicas", "prerrequisitos": [] },
+        { "codigo": "MAT-102", "nombre": "Álgebra y Geometría", "sct": 6, "area": "Ciencias Básicas", "prerrequisitos": [] },
+        { "codigo": "INF-102", "nombre": "Sistemas de Información", "sct": 6, "area": "Especialidad", "prerrequisitos": [] },
+        { "codigo": "GEN-101", "nombre": "Comunicación Efectiva", "sct": 6, "area": "Formación General", "prerrequisitos": [] }
+      ]
+    },
+    {
+      "semestre": 2,
+      "asignaturas": [
+        { "codigo": "INF-201", "nombre": "Programación Avanzada", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-101"] },
+        { "codigo": "MAT-201", "nombre": "Cálculo Integral", "sct": 6, "area": "Ciencias Básicas", "prerrequisitos": ["MAT-101"] },
+        { "codigo": "MAT-202", "nombre": "Estructuras Discretas", "sct": 6, "area": "Ciencias Básicas", "prerrequisitos": ["MAT-102"] },
+        { "codigo": "INF-202", "nombre": "Arquitectura de Computadores", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-102"] },
+        { "codigo": "GEN-201", "nombre": "Inglés Técnico I", "sct": 6, "area": "Formación General", "prerrequisitos": [] }
+      ]
+    },
+    {
+      "semestre": 3,
+      "asignaturas": [
+        { "codigo": "INF-301", "nombre": "Estructuras de Datos y Algoritmos", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-201"] },
+        { "codigo": "INF-302", "nombre": "Bases de Datos Relacionales", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-201"] },
+        { "codigo": "INF-303", "nombre": "Sistemas Operativos", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-202"] },
+        { "codigo": "EST-301", "nombre": "Probabilidad y Estadística", "sct": 6, "area": "Ciencias Básicas", "prerrequisitos": ["MAT-201"] },
+        { "codigo": "GEN-301", "nombre": "Inglés Técnico II", "sct": 6, "area": "Formación General", "prerrequisitos": ["GEN-201"] }
+      ]
+    },
+    {
+      "semestre": 4,
+      "asignaturas": [
+        { "codigo": "INF-401", "nombre": "Ingeniería de Software I", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-301"] },
+        { "codigo": "INF-402", "nombre": "Bases de Datos NoSQL y Distribuidas", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-302"] },
+        { "codigo": "INF-403", "nombre": "Redes de Computadores", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-303"] },
+        { "codigo": "INF-404", "nombre": "Desarrollo Web y Móvil", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-301"] },
+        { "codigo": "ECO-401", "nombre": "Economía y Costos de Proyectos", "sct": 6, "area": "Gestión", "prerrequisitos": ["MAT-201"] }
+      ]
+    },
+    {
+      "semestre": 5,
+      "asignaturas": [
+        { "codigo": "INF-501", "nombre": "Ingeniería de Software II", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-401"] },
+        { "codigo": "INF-502", "nombre": "Seguridad de la Información", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-403"] },
+        { "codigo": "INF-503", "nombre": "Arquitectura y Servicios Cloud", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-404"] },
+        { "codigo": "GES-501", "nombre": "Gestión de Proyectos TI", "sct": 6, "area": "Gestión", "prerrequisitos": ["ECO-401"] },
+        { "codigo": "INF-504", "nombre": "Inteligencia Artificial y Machine Learning", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-301", "EST-301"] }
+      ]
+    },
+    {
+      "semestre": 6,
+      "asignaturas": [
+        { "codigo": "INF-601", "nombre": "Taller Integrado de Software", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-501"] },
+        { "codigo": "INF-602", "nombre": "DevOps e Integración Continua", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-503"] },
+        { "codigo": "INF-603", "nombre": "Auditoría y Gestión de Riesgo TI", "sct": 6, "area": "Gestión", "prerrequisitos": ["INF-502"] },
+        { "codigo": "INF-604", "nombre": "Electivo Profesional I", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-501"] },
+        { "codigo": "GEN-601", "nombre": "Ética Profesional y Legislación Digital", "sct": 6, "area": "Formación General", "prerrequisitos": [] }
+      ]
+    },
+    {
+      "semestre": 7,
+      "asignaturas": [
+        { "codigo": "INF-701", "nombre": "Proyecto de Título I (Seminario)", "sct": 8, "area": "Especialidad", "prerrequisitos": ["INF-601"] },
+        { "codigo": "INF-702", "nombre": "Electivo Profesional II", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-604"] },
+        { "codigo": "INF-703", "nombre": "Gestión Estratégica e Innovación TI", "sct": 6, "area": "Gestión", "prerrequisitos": ["GES-501"] },
+        { "codigo": "PRA-701", "nombre": "Práctica Profesional", "sct": 10, "area": "Práctica", "prerrequisitos": ["INF-601"] }
+      ]
+    },
+    {
+      "semestre": 8,
+      "asignaturas": [
+        { "codigo": "INF-801", "nombre": "Proyecto de Título II (Memoria)", "sct": 16, "area": "Especialidad", "prerrequisitos": ["INF-701"] },
+        { "codigo": "INF-802", "nombre": "Electivo Profesional III", "sct": 6, "area": "Especialidad", "prerrequisitos": ["INF-702"] },
+        { "codigo": "INF-803", "nombre": "Emprendimiento Tecnológico", "sct": 8, "area": "Gestión", "prerrequisitos": ["INF-703"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+---
+// Componente Perfil de Egreso: Tarjetas con cabecera degradada oficial UTEM y contenedor de icono redondeado
+---
+<section id="perfil-egreso" class="py-24 bg-gradient-to-b from-slate-100/80 to-white border-y border-slate-200/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-blue-100 text-[#004b93] text-xs font-black uppercase tracking-wider mb-3">
+        Competencias Formativas
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-black text-[#1b365d] tracking-tight">
+        ¿Qué serás capaz de hacer al titularte?
+      </h2>
+      <div class="w-24 h-1 bg-[#78be20] mx-auto mt-4 rounded-full"></div>
+      <p class="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+        El perfil de egreso oficial de la UTEM <a href="#referencias" class="text-[#004b93] underline font-bold" title="Fuente F01">[F01]</a> define las competencias prácticas para liderar la industria digital:
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Competencia 1: Software -->
+      <div class="utem-featured-card flex flex-col justify-between group">
+        <div>
+          <div class="utem-banner-gradient-1 p-5 h-24 flex items-center">
+            <div class="utem-icon-badge group-hover:scale-105 transition-transform">
+              <!-- Icono de Código / Software -->
+              <svg class="w-6 h-6 text-[#004b93]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/>
+              </svg>
+            </div>
+            <div class="ml-3 text-white">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-200 block">Línea Principal</span>
+              <span class="text-sm font-black text-white leading-tight">Software</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-extrabold text-[#1b365d] text-base mb-2">Desarrollo de Software</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Diseñarás y programarás aplicaciones web, móviles y empresariales robustas y seguras con arquitecturas modernas y metodologías ágiles (Scrum).
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-slate-100 text-[11px] font-bold text-[#004b93] mt-2 flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-[#004b93]"></span>
+          <span>Semestres 1 al 6 &bull; Práctico</span>
+        </div>
+      </div>
+
+      <!-- Competencia 2: Datos -->
+      <div class="utem-featured-card flex flex-col justify-between group">
+        <div>
+          <div class="utem-banner-gradient-2 p-5 h-24 flex items-center">
+            <div class="utem-icon-badge group-hover:scale-105 transition-transform">
+              <!-- Icono de Bases de Datos / Nodos -->
+              <svg class="w-6 h-6 text-[#004b93]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+            </div>
+            <div class="ml-3 text-white">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-200 block">Especialidad</span>
+              <span class="text-sm font-black text-white leading-tight">Bases de Datos</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-extrabold text-[#1b365d] text-base mb-2">Datos y Analítica</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Modelarás y administrarás bases de datos relacionales y NoSQL distribuidas, asegurando alta disponibilidad e inteligencia de negocios.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-slate-100 text-[11px] font-bold text-[#0077c8] mt-2 flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-[#0077c8]"></span>
+          <span>Semestres 3 al 5 &bull; Analítica</span>
+        </div>
+      </div>
+
+      <!-- Competencia 3: Cloud & Redes -->
+      <div class="utem-featured-card flex flex-col justify-between group">
+        <div>
+          <div class="utem-banner-gradient-3 p-5 h-24 flex items-center">
+            <div class="utem-icon-badge group-hover:scale-105 transition-transform">
+              <!-- Icono de Conexión Global / Red (como el de la imagen de utem.cl) -->
+              <svg class="w-6 h-6 text-[#004b93]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M3.6 9h16.8M3.6 15h16.8"/>
+                <path d="M11.5 3a17 17 0 000 18M12.5 3a17 17 0 010 18"/>
+              </svg>
+            </div>
+            <div class="ml-3 text-white">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-200 block">Infraestructura</span>
+              <span class="text-sm font-black text-white leading-tight">Cloud & Redes</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-extrabold text-[#1b365d] text-base mb-2">Cloud y Ciberseguridad</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Desplegarás servicios en la nube (AWS, GCP, Azure), automatización DevOps e implementación de protocolos de protección informática.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-slate-100 text-[11px] font-bold text-[#78be20] mt-2 flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-[#78be20]"></span>
+          <span>Semestres 4 al 6 &bull; Seguridad</span>
+        </div>
+      </div>
+
+      <!-- Competencia 4: Gestión -->
+      <div class="utem-featured-card flex flex-col justify-between group">
+        <div>
+          <div class="utem-banner-gradient-4 p-5 h-24 flex items-center">
+            <div class="utem-icon-badge group-hover:scale-105 transition-transform">
+              <!-- Icono de Rompecabezas / Integración (como el de la imagen de utem.cl) -->
+              <svg class="w-6 h-6 text-[#004b93]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v.163a.75.75 0 01-.75.75h-.163c-.355 0-.676-.186-.959-.401-.29-.221-.634-.349-1.003-.349-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401h.163a.75.75 0 01.75.75v.163c0 .355-.186.676-.401.959-.221.29-.349.634-.349 1.003 0 1.036 1.007 1.875 2.25 1.875s2.25-.84 2.25-1.875c0-.369-.128-.713-.349-1.003-.215-.283-.401-.604-.401-.959v-.163a.75.75 0 01.75-.75h.163c.355 0 .676.186.959.401.29.221.634.349 1.003.349 1.036 0 1.875-1.007 1.875-2.25s-.84-2.25-1.875-2.25c-.369 0-.713.128-1.003.349-.283.215-.604.401-.959.401h-.163a.75.75 0 01-.75-.75v-.163z"/>
+              </svg>
+            </div>
+            <div class="ml-3 text-white">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-200 block">Liderazgo</span>
+              <span class="text-sm font-black text-white leading-tight">Gestión TI</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-extrabold text-[#1b365d] text-base mb-2">Gestión y Liderazgo</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Formularás y dirigirás proyectos tecnológicos evaluando factibilidad técnica, presupuestos y comunicación con clientes.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-slate-100 text-[11px] font-bold text-slate-700 mt-2 flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-slate-500"></span>
+          <span>Semestres 5 al 8 &bull; Proyectos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

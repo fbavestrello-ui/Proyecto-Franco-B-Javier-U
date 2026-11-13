@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ornate-douhua-c94b2a.netlify.app/sitemap-index.xml

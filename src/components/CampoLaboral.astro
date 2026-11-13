@@ -1,0 +1,103 @@
+---
+import { getCollection } from 'astro:content';
+
+const campoEntries = await getCollection('campo-laboral');
+const datos = campoEntries[0]?.data ?? {
+  empleabilidad_1er_ano: '84.2%',
+  empleabilidad_2do_ano: '89.7%',
+  ingreso_promedio_4to_ano: '$1.700.000 a $2.100.000',
+  ano_dato: 2024,
+  areas_desempeno: [],
+  fuente_id: 'F04'
+};
+---
+<section id="campo-laboral" class="py-24 bg-gradient-to-b from-[#001428] via-[#001f3f] to-[#001428] text-white relative overflow-hidden border-t border-sky-950 bg-grid-pattern">
+  <!-- Efectos de luz tenue para estética moderna -->
+  <div class="absolute top-0 right-1/4 w-96 h-96 bg-[#00a8e8]/15 rounded-full blur-[140px] pointer-events-none"></div>
+  <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-[#f39c12]/15 rounded-full blur-[140px] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-400/40 text-cyan-300 text-xs font-black uppercase tracking-wider mb-3 shadow-lg shadow-black/40">
+        Estadísticas Ministeriales (Mineduc)
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+        Inserción Laboral e Ingresos Reales
+      </h2>
+      <div class="w-24 h-1 gradient-bar-utem mx-auto mt-4"></div>
+      <p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+        Datos cuantitativos auditados por el Ministerio de Educación en el portal Mi Futuro <a href="#referencias" class="text-amber-400 underline font-bold" title="Fuente F04">[F04]</a> (Cohorte oficial {datos.ano_dato}).
+      </p>
+    </div>
+
+    <!-- Panel de Métricas Cuantitativas con Relieve 3D -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <!-- Tarjeta 1: Empleabilidad 1er Año -->
+      <div class="card-depth-dark p-8 rounded-3xl text-center relative group">
+        <div class="text-xs uppercase tracking-widest text-[#00a8e8] font-black mb-2">Inserción Inmediata</div>
+        <div class="text-5xl sm:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-sky-200 to-white my-3 tracking-tight drop-shadow-md">
+          {datos.empleabilidad_1er_ano}
+        </div>
+        <h3 class="text-base font-bold text-white mb-2">Empleabilidad al 1° Año</h3>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          Titulados con contratación formal registrada en el SII antes de cumplir 12 meses de egreso.
+        </p>
+        <div class="mt-5 pt-4 border-t border-white/10 text-[11px] font-mono text-cyan-200 bg-white/5 py-1.5 rounded-lg">
+          Fuente oficial: Mi Futuro ({datos.ano_dato})
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: Empleabilidad 2do Año -->
+      <div class="card-depth-dark p-8 rounded-3xl text-center relative group">
+        <div class="text-xs uppercase tracking-widest text-[#f39c12] font-black mb-2">Consolidación</div>
+        <div class="text-5xl sm:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-white my-3 tracking-tight drop-shadow-md">
+          {datos.empleabilidad_2do_ano}
+        </div>
+        <h3 class="text-base font-bold text-white mb-2">Empleabilidad al 2° Año</h3>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          Sostenibilidad y continuidad laboral de los profesionales en el ecosistema informático.
+        </p>
+        <div class="mt-5 pt-4 border-t border-white/10 text-[11px] font-mono text-amber-200 bg-white/5 py-1.5 rounded-lg">
+          Fuente oficial: Mi Futuro ({datos.ano_dato})
+        </div>
+      </div>
+
+      <!-- Tarjeta 3: Rango de Ingresos 4to Año -->
+      <div class="card-depth-dark p-8 rounded-3xl text-center relative group">
+        <div class="text-xs uppercase tracking-widest text-emerald-400 font-black mb-2">Retribución Mensual</div>
+        <div class="text-2xl sm:text-3xl lg:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-white my-5 tracking-tight drop-shadow-md">
+          {datos.ingreso_promedio_4to_ano}
+        </div>
+        <h3 class="text-base font-bold text-white mb-2">Ingreso Promedio al 4° Año</h3>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          Rango de ingreso bruto mensual formal declarado ante el Servicio de Impuestos Internos.
+        </p>
+        <div class="mt-5 pt-4 border-t border-white/10 text-[11px] font-mono text-emerald-200 bg-white/5 py-1.5 rounded-lg">
+          Fuente oficial: Mi Futuro ({datos.ano_dato})
+        </div>
+      </div>
+    </div>
+
+    <!-- Áreas de Desempeño Profesional y Déficit Nacional -->
+    <div class="card-depth-dark rounded-3xl p-8 sm:p-10">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
+        <div>
+          <h3 class="text-xl font-bold text-white">Principales Sectores de Contratación</h3>
+          <p class="text-xs text-slate-300">Áreas con mayor demanda según la Asociación Chilena de Empresas de Tecnologías de Información (ACTI) <a href="#referencias" class="text-cyan-300 underline font-bold">[F09]</a>.</p>
+        </div>
+        <span class="px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-black shadow-xs">
+          Alta Demanda Laboral
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {datos.areas_desempeno.map((area: string) => (
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 text-xs sm:text-sm text-slate-200 hover:bg-white/10 hover:border-amber-400/40 transition">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#f39c12] shrink-0 shadow-xs shadow-amber-400"></span>
+            <span class="font-medium">{area}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

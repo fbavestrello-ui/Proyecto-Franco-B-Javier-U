@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/schema.json",
+  "name": "Ingenieria en Informatica UTEM",
+  "description": "Sitio web oficial y verificable de la carrera de Ingeniería en Informática de la Universidad Tecnológica Metropolitana.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Universidad Tecnológica Metropolitana"
+  },
+  "resources": [
+    {
+      "name": "Malla Curricular",
+      "url": "/#plan-estudios"
+    },
+    {
+      "name": "Admisión DEMRE",
+      "url": "/#admision"
+    }
+  ]
+}

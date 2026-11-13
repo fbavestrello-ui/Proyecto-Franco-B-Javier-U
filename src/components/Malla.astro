@@ -1,0 +1,130 @@
+---
+import { getCollection } from 'astro:content';
+
+const mallaEntries = await getCollection('malla');
+const semestres = mallaEntries[0]?.data.semestres ?? [];
+---
+<section id="plan-estudios" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-grid-light">
+  <div class="text-center max-w-3xl mx-auto mb-16">
+    <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-blue-100/90 border border-blue-200 text-[#003366] text-xs font-black uppercase tracking-wider mb-3 shadow-xs">
+      Malla Curricular Oficial
+    </div>
+    <h2 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
+      Plan de Estudios: 8 Semestres (240 SCT)
+    </h2>
+    <div class="w-24 h-1 gradient-bar-utem mx-auto mt-4"></div>
+    <p class="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+      Aprobado por Decreto Universitario <a href="#referencias" class="text-sky-800 underline font-bold" title="Fuente F02">[F02]</a>. 
+      Usa los botones para filtrar los semestres al instante.
+    </p>
+  </div>
+
+  <!-- Contenedor Interactivo con Relieve de Tarjeta -->
+  <div class="bg-white rounded-3xl border border-slate-200 shadow-xl p-6 sm:p-10 mb-10">
+    <!-- Barra Superior de Filtros y Leyenda -->
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-6 mb-8 pb-6 border-b border-slate-100">
+      <!-- Selector de Semestre Rápido -->
+      <div class="flex flex-wrap items-center gap-2 w-full lg:w-auto">
+        <span class="text-xs font-black uppercase text-slate-400 mr-2 tracking-wider">Filtrar:</span>
+        <button type="button" class="filtro-btn px-4 py-2 rounded-xl text-xs font-black transition-all bg-[#002244] text-amber-400 border border-[#002244] shadow-md shadow-sky-950/20 cursor-pointer" data-target="todos">
+          Todos los Semestres (1-8)
+        </button>
+        {semestres.map((s) => (
+          <button type="button" class="filtro-btn px-3.5 py-2 rounded-xl text-xs font-bold transition-all bg-slate-50 text-slate-700 hover:bg-slate-200 border border-slate-200 cursor-pointer" data-target={`semestre-${s.semestre}`}>
+            Sem {s.semestre}
+          </button>
+        ))}
+      </div>
+
+      <!-- Leyenda de Áreas Formativas -->
+      <div class="flex flex-wrap items-center gap-4 text-xs font-bold text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+        <span class="flex items-center gap-1.5">
+          <span class="w-3 h-3 rounded-md bg-[#00509d] shadow-xs"></span> Especialidad
+        </span>
+        <span class="flex items-center gap-1.5">
+          <span class="w-3 h-3 rounded-md bg-[#f39c12] shadow-xs"></span> Cs. Básicas
+        </span>
+        <span class="flex items-center gap-1.5">
+          <span class="w-3 h-3 rounded-md bg-[#10b981] shadow-xs"></span> Gestión / Título
+        </span>
+      </div>
+    </div>
+
+    <!-- Malla de Semestres con Estilo de Tarjetas Físicas -->
+    <div id="grid-malla" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {semestres.map((s) => (
+        <div class="semestre-card rounded-2xl border border-slate-200 bg-gradient-to-b from-slate-50 to-white p-5 transition-all duration-300 hover:shadow-lg hover:border-sky-300 shadow-xs" data-semestre={`semestre-${s.semestre}`}>
+          <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
+            <h3 class="font-black text-sm text-[#002244] flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500 shadow-xs shadow-amber-500"></span>
+              Semestre {s.semestre}
+            </h3>
+            <span class="text-[11px] font-mono font-black px-2.5 py-0.5 rounded-full bg-[#002244] text-amber-400 shadow-xs">
+              {s.asignaturas.reduce((acc, a) => acc + a.sct, 0)} SCT
+            </span>
+          </div>
+
+          <ul class="space-y-3">
+            {s.asignaturas.map((asig) => {
+              const borderAccent = asig.area === 'Especialidad' 
+                ? 'border-l-4 border-l-[#00509d] bg-white hover:bg-sky-50/50' 
+                : asig.area === 'Ciencias Básicas' 
+                ? 'border-l-4 border-l-[#f39c12] bg-white hover:bg-amber-50/50' 
+                : 'border-l-4 border-l-[#10b981] bg-white hover:bg-emerald-50/50';
+
+              return (
+                <li class={`p-3.5 rounded-xl border border-slate-200 text-xs shadow-xs transition-all hover:-translate-y-0.5 hover:shadow-md ${borderAccent}`}>
+                  <div class="flex items-start justify-between gap-1 font-bold text-slate-900 leading-tight">
+                    <span>{asig.nombre}</span>
+                    <span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-slate-100 text-slate-800 shrink-0 border border-slate-200">{asig.sct} SCT</span>
+                  </div>
+                  
+                  <div class="flex items-center justify-between mt-2.5 text-[10px] text-slate-500 font-semibold">
+                    <span class="font-mono text-slate-700 bg-slate-100 px-1 py-0.5 rounded">{asig.codigo}</span>
+                    <span class="italic text-slate-500">{asig.area}</span>
+                  </div>
+
+                  {asig.prerrequisitos.length > 0 && (
+                    <div class="mt-2 pt-1.5 border-t border-slate-100 text-[10px] text-slate-500">
+                      Requisitos: <span class="font-mono font-semibold text-slate-800">{asig.prerrequisitos.join(', ')}</span>
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Script para botones de filtrado interactivo (Isla justificada)
+  const buttons = document.querySelectorAll('.filtro-btn');
+  const cards = document.querySelectorAll('.semestre-card');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-target');
+
+      // Actualizar estilo activo de botones
+      buttons.forEach((b) => {
+        b.classList.remove('bg-[#002244]', 'text-amber-400', 'border-[#002244]', 'shadow-md', 'shadow-sky-950/20');
+        b.classList.add('bg-slate-50', 'text-slate-700', 'border-slate-200');
+      });
+      btn.classList.remove('bg-slate-50', 'text-slate-700', 'border-slate-200');
+      btn.classList.add('bg-[#002244]', 'text-amber-400', 'border-[#002244]', 'shadow-md', 'shadow-sky-950/20');
+
+      // Mostrar u ocultar tarjetas de semestre
+      cards.forEach((card) => {
+        const el = card as HTMLElement;
+        if (target === 'todos' || el.getAttribute('data-semestre') === target) {
+          el.style.display = 'block';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

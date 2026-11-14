@@ -16,7 +16,7 @@ Proyecto evaluativo para la asignatura **EFE685 - Electivo de Computación Móvi
 
 ## 🌐 Enlace del Sitio Publicado
 * **URL de Producción:** [https://ornate-douhua-c94b2a.netlify.app/](https://ornate-douhua-c94b2a.netlify.app/) *(Desplegado en Netlify)*.
-* **Calidad Técnica Lighthouse:** 100/100 Rendimiento, 100/100 Accesibilidad, 100/100 Buenas Prácticas, 100/100 SEO.
+* **Calidad Técnica Lighthouse:** 100/100 Rendimiento, 94/100 Accesibilidad, 100/100 Buenas Prácticas, 100/100 SEO.
 
 ---
 
